@@ -1,0 +1,27 @@
+// tracks.js
+// Replace `src` with your hosted MP3 URLs.
+// cover can be any image URL (or a local file path if you add images in repo).
+
+window.TRACKS = [
+  {
+    title: "SEASONZ",
+    artist: "Your Name",
+    src: "https://example.com/audio/seasonz.mp3",
+    cover: "https://example.com/images/seasonz.jpg",
+    tag: "single",
+  },
+  {
+    title: "SOUL WARZ",
+    artist: "Your Name",
+    src: "https://example.com/audio/soul_warz.mp3",
+    cover: "https://example.com/images/soul_warz.jpg",
+    tag: "single",
+  },
+  {
+    title: "CYBERWORLD",
+    artist: "Your Name",
+    src: "https://example.com/audio/cyberworld.mp3",
+    cover: "https://example.com/images/cyberworld.jpg",
+    tag: "single",
+  },
+];
