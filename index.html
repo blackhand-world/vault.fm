@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VAULT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">VAULT</div>
+        <div class="tag">No algorithms. Just sound.</div>
+      </div>
+    </header>
+
+    <section class="player" aria-label="Audio player">
+      <div class="now">
+        <img id="cover" class="cover" alt="Cover art" />
+        <div class="meta">
+          <div id="title" class="title">—</div>
+          <div id="artist" class="artist">—</div>
+
+          <div class="controls">
+            <button id="prevBtn" class="btn" aria-label="Previous">⟵</button>
+            <button id="playBtn" class="btn primary" aria-label="Play/Pause">▶</button>
+            <button id="nextBtn" class="btn" aria-label="Next">⟶</button>
+          </div>
+
+          <div class="timeline">
+            <span id="curTime" class="time">0:00</span>
+            <input id="seek" class="seek" type="range" min="0" max="1000" value="0" />
+            <span id="durTime" class="time">0:00</span>
+          </div>
+
+          <div class="subcontrols">
+            <label class="vol">
+              <span>VOL</span>
+              <input id="vol" type="range" min="0" max="1" step="0.01" value="0.9" />
+            </label>
+            <label class="toggle">
+              <input id="autoplay" type="checkbox" checked />
+              <span>Auto-next</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <audio id="audio" preload="metadata" crossorigin="anonymous"></audio>
+    </section>
+
+    <section class="library" aria-label="Track list">
+      <div class="libraryHead">
+        <div class="h">Library</div>
+        <div id="count" class="count"></div>
+      </div>
+      <ul id="list" class="list"></ul>
+    </section>
+
+    <footer class="footer">
+      <span>©</span> <span id="year"></span> <span class="muted">VAULT</span>
+    </footer>
+  </main>
+
+  <script src="tracks.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
